@@ -9,9 +9,9 @@
     <style>
     /* CSS Variables */
     :root {
-        --brand: #2f5bea;
-        --light: #eef2ff;
-        --dark: #3b0757;
+        --brand: #b76e79;
+        --light: #b76e79;
+        --dark: #090811;
         --gap: 16px;
     }
     /* Universal Selector */
@@ -38,6 +38,22 @@ h1 {
 h2 {
     margin-bottom: 12px;
 }
+  /* ID Selector */
+#hero {
+    background: var(--brand);
+    color: rgb(16, 18, 18);
+    text-align: center;
+    padding: 32px var(--gap);
+    border-radius: 10px;
+}
+
+/* Class Selector */
+.card {
+    background: #f3d9df;
+    padding: var(--gap);
+    margin-top: var(--gap);
+    border-radius: 10px;
+}
 </style>
     <link rel="icon" href="favicon.ico">
 </head>
@@ -49,11 +65,15 @@ h2 {
         <a href="#register">Register</a>
     </nav>
 
+    <header id="hero">
     <h1>Coding Club</h1>
+    <p>Learn. Build. Share.</p>
+</header>
 
     <p>Welcome to our Coding Club!</p>
         <!-- Upcoming Events Section -->
-    <h2 id="events">Upcoming Events</h2>
+        <section class="card">
+        <h2 id="events">Upcoming Events</h2>
 
     <table border="1">
 
@@ -88,6 +108,8 @@ h2 {
         </tfoot>
 
     </table>
+    </section>
+    
         <!-- Registration Form -->
     <h2 id="register">Register for the Coding Club</h2>
 
