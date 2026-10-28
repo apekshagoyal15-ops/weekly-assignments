@@ -75,7 +75,6 @@
     font-size: 28px;
 }
 
-
     footer {
         grid-area: foot;
         background: #12203a;
@@ -84,6 +83,20 @@
         text-align: center;
         border-radius: 8px;
     }
+    @media (max-width: 600px) {
+    .layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "head"
+            "side"
+            "main"
+            "foot";
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
 
 </head>
