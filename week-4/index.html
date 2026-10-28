@@ -49,6 +49,108 @@
         </tfoot>
 
     </table>
+        <!-- Registration Form -->
+    <h2 id="register">Register for the Coding Club</h2>
+
+    <form action="#" method="post">
+
+        <!-- Name -->
+        <p>
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+        </p>
+
+        <!-- Email -->
+        <p>
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+        </p>
+
+        <!-- Password -->
+        <p>
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                required
+            >
+        </p>
+
+        <!-- Date of Birth -->
+        <p>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </p>
+
+        <!-- Phone -->
+        <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+        </p>
+
+        <!-- Gender -->
+        <p>
+            Gender:
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </p>
+
+        <!-- Interests -->
+        <p>
+            Interests:
+
+            <input type="checkbox" id="web" name="interests" value="web">
+            <label for="web">Web Development</label>
+
+            <input type="checkbox" id="dsa" name="interests" value="dsa">
+            <label for="dsa">DSA</label>
+        </p>
+
+        <!-- Branch Dropdown -->
+        <p>
+            <label for="branch">Branch:</label>
+
+            <select id="branch" name="branch">
+                <option value="btech">B.Tech</option>
+                <option value="bca">BCA</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+
+        <!-- Message -->
+        <p>
+            <label for="message">Why do you want to join?</label>
+            <br>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="30"
+            ></textarea>
+        </p>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+
+    </form>
 
 </body>
 
