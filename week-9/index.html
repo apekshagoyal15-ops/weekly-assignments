@@ -129,6 +129,56 @@ footer {
     color: white;
 }
 
+/* Tablet layout */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.2rem 2rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .features {
+        padding: 3rem 2rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Laptop layout */
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 1.5rem 4rem;
+    }
+
+    .hero {
+        padding: 4rem;
+        gap: 3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .features {
+        padding: 4rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
+
     </style>
 </head>
 <body>
