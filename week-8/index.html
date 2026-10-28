@@ -53,6 +53,28 @@
     main {
         grid-area: main;
     }
+    
+/* Automatically arrange dashboard cards */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+/* Arrange icon and text side by side */
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.icon {
+    font-size: 28px;
+}
+
 
     footer {
         grid-area: foot;
